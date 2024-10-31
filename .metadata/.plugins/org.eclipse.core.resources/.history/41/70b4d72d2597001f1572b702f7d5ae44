@@ -1,0 +1,24 @@
+package edu.kh.todo.common.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+/*
+ * @Configuration
+ * - 스프링 설정용 클래스임을 명시 (스프링이 해당 클래스를 설정 정보로 인식하고 사용)
+ *   * 객체로 생성해서 내부 코드를 서버 실행시 모두 바로 실행
+ * 
+ * 
+ * @PropertySource("경로") 
+ * - 지정된 경로의 Properties 파일 내용을 읽어와 사용
+ * - 사용할 properties 파일이 다수일 경우
+ *   해당 어노테이션 연속해서 작성 가능
+ * 
+ * 
+ * */
+
+@Configuration
+@PropertySource("classpath:/config.properties")
+public class DBConfig {
+
+}

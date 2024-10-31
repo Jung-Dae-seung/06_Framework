@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<!-- th 속성 추가 네임스페이스 선언 -->
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타임리프 예제1</title>
+  </head>
+
+  <body>
+    
+    <h4 th:text="${test1}">test1 값</h4>
+  </body>
+
+</html>

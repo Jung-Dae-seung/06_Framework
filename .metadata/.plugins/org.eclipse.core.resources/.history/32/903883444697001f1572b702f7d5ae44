@@ -1,0 +1,16 @@
+package edu.kh.todo.model.dao;
+
+import org.springframework.stereotype.Repository;
+
+import edu.kh.todo.model.mapper.TodoMapper;
+
+@Repository // DAO 계층 역할 명시 + Bean 등록
+public class TodoDAO {
+
+	private TodoMapper mapper;
+	
+	public String testTitle() {
+		return null;
+	}
+
+}

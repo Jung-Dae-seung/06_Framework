@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;cat1.jpg&apos; to &apos;images&apos;&#x0D;&#x0A;- Original project: &apos;demoProject1&apos;&#x0D;&#x0A;- Destination element: &apos;images&apos;&#x0D;&#x0A;- Original element: &apos;cat1.jpg&apos;" description="Copy file" element1="src/main/resources/static/images/cats/cat1.jpg" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1730250770161" target="/demoProject2/src/main/resources/static/images" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,30 @@
+package edu.kh.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import jakarta.servlet.http.HttpServletRequest;
+import lombok.extern.slf4j.Slf4j;
+
+@Controller // 요청 / 응답 제어 역할 명시 + Bean 등록
+@RequestMapping("example") // /example 로 시작하는 주소를 해당 컨트롤러에 매핑
+@Slf4j // lombok 라이브러리가 제공하는 로그 객체 자동생성 어노테이션
+public class ExampleController {
+
+	// /example/ex1 GET 방식 요청을 매핑
+	@GetMapping("ex1")
+	public String ex1(HttpServletRequest req, Model model) {
+		
+		// Servlet/JSP 내장 객체 범위(scope)
+		// page < request < session < application
+		
+		// request.scope
+		req.setAttribute("test1", "HttpServletRequest 로 전달할 값");
+		
+		return "example/ex1";
+		// templates/example/ex1.html 요청 위임
+	}
+	
+}

@@ -1,0 +1,10 @@
+package edu.kh.todo.model.service;
+
+public interface TodoService {
+
+	/** (TEST) todoMo
+	 * @return
+	 */
+	String testTitle(); 
+
+}
