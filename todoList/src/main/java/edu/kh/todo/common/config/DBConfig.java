@@ -109,7 +109,7 @@ public class DBConfig {
 		sessionFactoryBean.setMapperLocations(
 				applicationContext.getResources("classpath:/mappers/**.xml"));
 				// 현재프로젝트.자원을.src/main/resources/mappers/하위의 모든.xml 파일
-	
+
 		
 		// 세팅 2. 해당 패키지 내 모든 클래스의 별칭을 등록
 		// - Mybatis는 특정 클래스 지정시 패키지명.클래스명을 모두 작성해야함.
