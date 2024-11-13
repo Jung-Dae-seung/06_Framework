@@ -1,0 +1,17 @@
+package edu.kh.project.email.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import edu.kh.project.email.model.service.EmailService;
+import lombok.RequiredArgsConstructor;
+
+@RequestMapping("email")
+@Controller
+@RequiredArgsConstructor
+public class EmailController {
+
+	private final EmailService service;
+	
+	
+}

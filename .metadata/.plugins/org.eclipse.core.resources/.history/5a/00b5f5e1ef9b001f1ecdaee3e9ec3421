@@ -1,0 +1,11 @@
+<!-- 타임리프 값을 JS 자료형에 맞게 변환 -->
+<script th:inline="javascript">
+  const message = /*[[${message}]]*/ null;
+                  // 전달받은 message 가 없으면 null
+  
+				  console.log(/*[[${param]]*/)
+				  
+  if(message != null) {
+    alert(message);
+  }
+</script>

@@ -1,0 +1,33 @@
+package edu.kh.project.common.config;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.mail.javamail.JavaMailSender;
+
+@Configuration
+@PropertySource("classpath:/config.properties")
+public class EmailConfig {
+
+	// Value : properties에 작성된 내용 중 key가 일치하는 value값을 얻어와 필드에 대입
+	@Value("${spring.mail.username}")
+	private String userName;
+	
+	@Value("${spring.mail.password}")
+	private String password;
+	
+	@Bean
+	public JavaMailSender javaMailSender() {
+		/*
+		 * Spring에서 JavaMailSender를 구성하는 Bean을 정의.
+		 * 
+		 * JavaMailSender : 이메일을 보내는데 사용되는 인터페이스로,
+		 * 					JavaMailSenderImpl 클래스를 통해 구현됨.
+		 * 					SMTP 서버를 사용하여 이메일을 보내기 위한 구성을 제공.
+		 * 
+		 * 
+		 * */
+	}
+	
+}
