@@ -9,7 +9,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @Controller
 public class MainController {
 
-	
 	@RequestMapping("/") // "/" 요청 매핑
 	public String mainPage() {
 		
