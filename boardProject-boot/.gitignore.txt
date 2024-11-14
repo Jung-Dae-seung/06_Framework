@@ -15,7 +15,7 @@ Servers
 .project
 
 ### Eclipse ###
-.metadata
+.metadata/
 bin/
 tmp/
 *.tmp

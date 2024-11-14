@@ -15,7 +15,7 @@ Servers
 .project
 
 ### Eclipse ###
-.metadata
+boardProject-boot/.metadata
 bin/
 tmp/
 *.tmp
