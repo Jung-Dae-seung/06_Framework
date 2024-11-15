@@ -10,6 +10,7 @@
 // 2) 현재 게시글 번호 준비
 // 3) 좋아요 여부 준비
 
+
 // 1. #boardLike 가 클릭 되었을 때
 document.querySelector("#boardLike").addEventListener("click", e => {
 

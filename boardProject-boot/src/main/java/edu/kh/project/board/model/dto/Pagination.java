@@ -27,10 +27,12 @@ public class Pagination {
 	
 	// 기본 생성자 X (필요없음) -> 페이지네이션 계산 X
 	
-	
+	// 매개변수 생성자
 	public Pagination(int currentPage, int listCount) {
 		this.currentPage = currentPage;
 		this.listCount = listCount;
+		
+		calculate();
 	}
 	
 
@@ -39,6 +41,8 @@ public class Pagination {
 		this.listCount = listCount;
 		this.limit = limit;
 		this.pageSize = pageSize;
+		
+		calculate();
 	}
 
 
@@ -48,6 +52,8 @@ public class Pagination {
 
 	public void setCurrentPage(int currentPage) {
 		this.currentPage = currentPage;
+		
+		calculate();
 	}
 
 	public int getListCount() {
@@ -56,6 +62,8 @@ public class Pagination {
 
 	public void setListCount(int listCount) {
 		this.listCount = listCount;
+		
+		calculate();
 	}
 
 	public int getLimit() {
@@ -64,6 +72,8 @@ public class Pagination {
 
 	public void setLimit(int limit) {
 		this.limit = limit;
+		
+		calculate();
 	}
 
 	public int getPageSize() {
@@ -72,6 +82,8 @@ public class Pagination {
 
 	public void setPageSize(int pageSize) {
 		this.pageSize = pageSize;
+		
+		calculate();
 	}
 
 	public int getMaxPage() {
@@ -133,6 +145,30 @@ public class Pagination {
 		
 		// 페이지 끝 번호가 최대 페이지 수를 초과한 경우
 		if(endPage > maxPage) endPage = maxPage;
+		
+		// prevPage : "<" 클릭 시 이동할 페이지 번호
+		//            (이전 페이지 번호 목록 중 끝 번호)
+		
+		// 더 이상 이전으로 갈 페이지가 없을 경우
+		if(currentPage <= pageSize) {
+			prevPage = 1;
+			
+		} else {
+			prevPage = startPage - 1;
+			
+		}
+		
+		// nextPage : ">" 클릭 시 이동할 페이지 번호
+		//            (다음 페이지 번호 목록 중 시작 번호)
+		
+		// 더 이상 다음으로 넘어갈 페이지가 없을 경우
+		if(endPage == maxPage) {
+			nextPage = maxPage;
+			
+		} else {
+			nextPage = endPage + 1;
+			
+		}
 		
 	}
 	

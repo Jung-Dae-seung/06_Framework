@@ -1,11 +1,13 @@
 package edu.kh.project.member.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -195,5 +197,64 @@ public class MemberController {
 		// 실패 -> redirect:signup(상대경로)
 				// 현재 주소 /member/signup (GET 방식 요청)
 	}
+	
+	/** 메인화면 회원 목록 조회
+	 * @return List<Member>
+	 */
+	@ResponseBody
+	@PostMapping("mainMemberList")
+	public List<Member> mainMemberList() {
+		return service.memberList();
+	}
+	
+	
+	/** 특정 회원 비밀번호 초기화
+	 * @param memberNo
+	 * @param ra
+	 * @return result
+	 */
+	@ResponseBody
+	@PostMapping("resetPw")
+	public int resetPw(@RequestBody String memberNo,
+					   RedirectAttributes ra) {
+		
+		// log.debug("resetMemberNo : " + memberNo);
+		
+		// 회원 비밀번호 초기화 진행
+		int result = service.resetPw(memberNo);
+		
+		// 초기화(update) 성공시
+		if(result > 0) {
+			return result;
+			
+		} 
+		
+		return 0;
+	}
+	
+	/** 특정 회원 탈퇴 복구
+	 * @param memberNo
+	 * @param ra
+	 * @return result
+	 */
+	@ResponseBody
+	@PostMapping("restorationMember")
+	public int restorationMember(@RequestBody String memberNo,
+			RedirectAttributes ra) {
+		
+		// log.debug("resetMemberNo : " + memberNo);
+		
+		// 특정 회원 탈퇴 복구
+		int result = service.restorationMember(memberNo);
+		
+		// 탈퇴 복구(update) 성공시
+		if(result > 0) {
+			return result;
+			
+		} 
+		
+		return 0;
+	}
+	
 	
 }

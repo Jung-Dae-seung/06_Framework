@@ -367,6 +367,12 @@ INSERT INTO "BOARD_TYPE" VALUES(SEQ_BOARD_CODE.NEXTVAL, '자유 게시판');
 
 COMMIT;
 
+SELECT 
+	BOARD_CODE "boardCode", 
+	BOARD_NAME "boardName"
+FROM "BOARD_TYPE"
+ORDER BY BOARD_CODE;
+
 ---------------------------------------------
 /* 게시글 번호 시퀀스 생성 */
 CREATE SEQUENCE SEQ_BOARD_NO NOCACHE;
@@ -400,7 +406,52 @@ FROM "BOARD"
 GROUP BY BOARD_CODE
 ORDER BY BOARD_CODE;
 
+SELECT * FROM "BOARD";
 
+
+-- 번호 / 제목[댓글갯수] / 작성자 닉네임 / 작성일 / 조회수 / 좋아요개수
+
+SELECT 
+		BOARD_NO, 
+		BOARD_TITLE, 
+		MEMBER_NICKNAME, 
+		READ_COUNT,
+		
+		(SELECT COUNT(*)
+		 FROM "COMMENT" COM
+		 WHERE COM.BOARD_NO = BOA.BOARD_NO) COMMENT_COUNT,
+		 
+		(SELECT COUNT(*)
+		 FROM "BOARD_LIKE" BOALK
+		 WHERE BOALK.BOARD_NO = BOA.BOARD_NO) LIKE_COUNT,
+		 
+			 CASE 
+				 WHEN SYSDATE - BOARD_WRITE_DATE < 1 / 24 / 60
+				 THEN FLOOR( (SYSDATE - BOARD_WRITE_DATE) * 24 * 60 * 60 ) || '초 전'
+				 
+				 WHEN SYSDATE - BOARD_WRITE_DATE < 1 / 24
+				 THEN FLOOR( (SYSDATE - BOARD_WRITE_DATE) * 24 * 60) || '분 전'
+				 
+				 WHEN SYSDATE - BOARD_WRITE_DATE < 1
+				 THEN FLOOR( (SYSDATE - BOARD_WRITE_DATE) * 24 ) || '시간 전'
+				 
+				 ELSE TO_CHAR(BOARD_WRITE_DATE, 'YYYY-MM-DD')
+			 END BOARD_WRTIE_DATE
+		 
+	FROM "BOARD" BOA
+	JOIN "MEMBER" USING(MEMBER_NO)
+	WHERE BOARD_DEL_FL = 'N'
+	AND BOARD_CODE = 1
+	ORDER BY BOARD_NO DESC;
+
+
+-- 특정 게시글의 댓글 개수 조회
+SELECT COUNT(*) FROM "COMMENT"
+WHERE BOARD_NO = 1997;
+
+-- 현재시간 - 하루 전
+SELECT SYSDATE - TO_DATE('2024-11-13 11:19:20', 'YYYY-MM-DD HH24:MI:SS')
+FROM DUAL;
 
 ---------------------------------------------------
 -- 부모 댓글 번호 NULL 허용
@@ -441,66 +492,81 @@ GROUP BY BOARD_NO
 ORDER BY BOARD_NO;
 
 
+-- 게시글 상세 조회
+SELECT 
+	BOARD_NO, 
+	BOARD_TITLE, 
+	BOARD_CONTENT, 
+	BOARD_CODE, 
+	READ_COUNT,
+	MEMBER_NO, 
+	MEMBER_NICKNAME, 
+	PROFILE_IMG,
+	TO_CHAR(BOARD_WRITE_DATE, 'YYYY"년" MM"월" DD"일" HH24:MI:SS') BOARD_WRITE_DATE, 
+	TO_CHAR(BOARD_UPDATE_DATE, 'YYYY"년" MM"월" DD"일" HH24:MI:SS') BOARD_UPDATE_DATE, 
 
------------------------------------------------------
+	( 
+		SELECT COUNT(*) 
+		FROM "BOARD_LIKE"
+		WHERE BOARD_NO = 2000 
+	) LIKE_COUNT,
 
-/* BOARD_IMG 테이블용 시퀀스 생성 */
-CREATE SEQUENCE SEQ_IMG_NO NOCACHE;
+	( 
+		SELECT IMG_PATH || IMG_RENAME 
+		FROM "BOARD_IMG"
+		WHERE BOARD_NO = 2000
+		AND IMG_ORDER = 0 
+	) THUMBNAIL,
+	
+	(
+		SELECT COUNT(*)
+		FROM "BOARD_LIKE"
+		WHERE BOARD_NO = 2000
+	) LIKE_CHECK
 
-/* BOARD_IMG 테이블에 샘플 데이터 삽입 */
-INSERT INTO "BOARD_IMG" VALUES(
-	SEQ_IMG_NO.NEXTVAL, '/images/board/', '원본1.jpg', 'test1.jpg', 0, 1998
-);
-
-INSERT INTO "BOARD_IMG" VALUES(
-	SEQ_IMG_NO.NEXTVAL, '/images/board/', '원본2.jpg', 'test2.jpg', 1, 1998
-);
-
-INSERT INTO "BOARD_IMG" VALUES(
-	SEQ_IMG_NO.NEXTVAL, '/images/board/', '원본3.jpg', 'test3.jpg', 2, 1998
-);
-
-INSERT INTO "BOARD_IMG" VALUES(
-	SEQ_IMG_NO.NEXTVAL, '/images/board/', '원본4.jpg', 'test4.jpg', 3, 1998
-);
-
-INSERT INTO "BOARD_IMG" VALUES(
-	SEQ_IMG_NO.NEXTVAL, '/images/board/', '원본5.jpg', 'test5.jpg', 4, 1998
-);
-
-
-COMMIT;
-
-
--------------------------------------------------------
-
-/* 좋아요 테이블(BOARD_LIKE) 샘플 데이터 추가 */
-INSERT INTO "BOARD_LIKE"
-VALUES(1, 1998); -- 1번 회원이 1998번 글에 좋아요를 클릭함
-
-COMMIT;
-
-----------------------------------------------------------
-
--- SEQ_IMG_NO 시퀀스의 다음 값을 반환하는 함수 생성
-
--- 전체 드래그 ALT+X
-CREATE OR REPLACE FUNCTION NEXT_IMG_NO
--- 반환형
-RETURN NUMBER
--- 사용할 변수
-IS IMG_NO NUMBER;
-BEGIN 
-	SELECT SEQ_IMG_NO.NEXTVAL 
-	INTO IMG_NO
-	FROM DUAL;
-
-	RETURN IMG_NO;
-END;
--- 여기까지 긁기
+FROM "BOARD"
+JOIN "MEMBER" USING(MEMBER_NO)
+WHERE BOARD_DEL_FL = 'N'
+AND BOARD_CODE = 1
+AND BOARD_NO = 2000;
 
 
+-- 좋아요 개수 조회
+SELECT COUNT(*)
+FROM "BOARD_LIKE"
+WHERE BOARD_NO = 2000;
 
+
+-- 댓글 조회
+/*계층형 쿼리*/
+SELECT LEVEL, C.* FROM
+	(SELECT 
+			COMMENT_NO, 
+			COMMENT_CONTENT,
+		  TO_CHAR(COMMENT_WRITE_DATE, 'YYYY"년" MM"월" DD"일" HH24"시" MI"분" SS"초"') COMMENT_WRITE_DATE,
+		  BOARD_NO, 
+		  MEMBER_NO, 
+		  MEMBER_NICKNAME, 
+		  PROFILE_IMG, 
+		  PARENT_COMMENT_NO, 
+		  COMMENT_DEL_FL
+	FROM "COMMENT"
+	JOIN MEMBER USING(MEMBER_NO)
+	WHERE BOARD_NO = 2000) C
+WHERE COMMENT_DEL_FL = 'N'
+OR 0 != (SELECT 
+						COUNT(*) 
+				FROM "COMMENT" SUB
+				WHERE SUB.PARENT_COMMENT_NO = C.COMMENT_NO
+				AND COMMENT_DEL_FL = 'N')
+				--> 삭제된 댓글이라도, 그 아래에 활성 상태인 자식 댓글이 존재하면 조회
+START WITH PARENT_COMMENT_NO IS NULL
+CONNECT BY PRIOR COMMENT_NO = PARENT_COMMENT_NO
+ORDER SIBLINGS BY COMMENT_NO
+;
+
+
+SELECT * FROM "COMMENT";
 
 INSERT INTO "COMMENT"	
 VALUES( SEQ_COMMENT_NO.NEXTVAL, '부모 댓글 1',
@@ -536,6 +602,68 @@ VALUES( SEQ_COMMENT_NO.NEXTVAL, '부모 2의 자식 1의 자식!!!',
 
 			 
 COMMIT;
+
+
+
+-----------------------------------------------------
+
+/* BOARD_IMG 테이블용 시퀀스 생성 */
+CREATE SEQUENCE SEQ_IMG_NO NOCACHE;
+
+/* BOARD_IMG 테이블에 샘플 데이터 삽입 */
+INSERT INTO "BOARD_IMG" VALUES(
+	SEQ_IMG_NO.NEXTVAL, '/images/board/', '원본1.jpg', 'test1.jpg', 0, 2000
+);
+
+INSERT INTO "BOARD_IMG" VALUES(
+	SEQ_IMG_NO.NEXTVAL, '/images/board/', '원본2.jpg', 'test2.jpg', 1, 2000
+);
+
+INSERT INTO "BOARD_IMG" VALUES(
+	SEQ_IMG_NO.NEXTVAL, '/images/board/', '원본3.jpg', 'test3.jpg', 2, 2000
+);
+
+INSERT INTO "BOARD_IMG" VALUES(
+	SEQ_IMG_NO.NEXTVAL, '/images/board/', '원본4.jpg', 'test4.jpg', 3, 2000
+);
+
+INSERT INTO "BOARD_IMG" VALUES(
+	SEQ_IMG_NO.NEXTVAL, '/images/board/', '원본5.jpg', 'test5.jpg', 4, 2000
+);
+
+
+COMMIT;
+
+SELECT * FROM "BOARD_IMG";
+
+
+-------------------------------------------------------
+
+/* 좋아요 테이블(BOARD_LIKE) 샘플 데이터 추가 */
+INSERT INTO "BOARD_LIKE"
+VALUES(1, 1998); -- 1번 회원이 1998번 글에 좋아요를 클릭함
+
+COMMIT;
+
+----------------------------------------------------------
+
+-- SEQ_IMG_NO 시퀀스의 다음 값을 반환하는 함수 생성
+
+-- 전체 드래그 ALT+X
+CREATE OR REPLACE FUNCTION NEXT_IMG_NO
+-- 반환형
+RETURN NUMBER
+-- 사용할 변수
+IS IMG_NO NUMBER;
+BEGIN 
+	SELECT SEQ_IMG_NO.NEXTVAL 
+	INTO IMG_NO
+	FROM DUAL;
+
+	RETURN IMG_NO;
+END;
+-- 여기까지 긁기
+
 
 
 

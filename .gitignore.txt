@@ -13,6 +13,8 @@ META-INF
 Servers
 .classpath
 .project
+.gradle
+.settings
 
 ### Eclipse ###
 boardProject-boot/.metadata

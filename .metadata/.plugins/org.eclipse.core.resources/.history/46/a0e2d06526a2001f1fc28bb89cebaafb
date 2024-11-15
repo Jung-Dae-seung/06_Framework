@@ -1,0 +1,28 @@
+package edu.kh.project.common.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import edu.kh.project.common.interceptoor.BoardTypeInterseptor;
+
+// 인터셉터가 어떤 요청을 가로챌지 설정하는 클래스
+
+@Configuration // 서버가 켜지면 내부 메서드를 모두 수행
+public class InterceptorConfig implements WebMvcConfigurer{
+
+	// 인터셉터 클래스 Bean 등록
+	@Bean
+	public BoardTypeInterseptor boardTypeInterseptor {
+		return new BoardTypeInterseptor();
+	}
+	
+	// 동작할 인터셉터 객체를 추가하는 메서드
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+		// TODO Auto-generated method stub
+		WebMvcConfigurer.super.addInterceptors(registry);
+	}
+	
+}
