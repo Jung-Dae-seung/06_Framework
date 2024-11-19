@@ -531,10 +531,23 @@ AND BOARD_CODE = 1
 AND BOARD_NO = 2000;
 
 
--- 좋아요 개수 조회
-SELECT COUNT(*)
-FROM "BOARD_LIKE"
-WHERE BOARD_NO = 2000;
+-- 상세 조회한 게시글의 이미지 목록 조회
+SELECT *
+FROM "BOARD_IMG"
+WHERE BOARD_NO = 2000
+ORDER BY IMG_ORDER;
+
+UPDATE "MEMBER"
+SET MEMBER_PW = '$2a$10$f9zfP34qzjnntZEJiRAUIu4trzfZbZ/F5NQI2mfm2vxHctM55/HBy'
+WHERE MEMBER_NO = 4;
+
+COMMIT;
+
+SELECT * FROM "MEMBER";
+
+SELECT * FROM TB_AUTH_KEY;
+
+SELECT * FROM all_sequences WHERE sequence_owner = 'SEQ_MEMBER_NO';
 
 
 -- 댓글 조회
@@ -562,8 +575,7 @@ OR 0 != (SELECT
 				--> 삭제된 댓글이라도, 그 아래에 활성 상태인 자식 댓글이 존재하면 조회
 START WITH PARENT_COMMENT_NO IS NULL
 CONNECT BY PRIOR COMMENT_NO = PARENT_COMMENT_NO
-ORDER SIBLINGS BY COMMENT_NO
-;
+ORDER SIBLINGS BY COMMENT_NO;
 
 
 SELECT * FROM "COMMENT";
@@ -647,6 +659,20 @@ COMMIT;
 
 ----------------------------------------------------------
 
+INSERT INTO "BOARD_IMG"
+(
+	SELECT NEXT_IMG_NO(), '경로1', '원본1', '변경1', 1, 2001 FROM DUAL
+	UNION
+	SELECT NEXT_IMG_NO(), '경로1', '원본1', '변경1', 1, 2001 FROM DUAL
+	UNION
+	SELECT NEXT_IMG_NO(), '경로1', '원본1', '변경1', 1, 2001 FROM DUAL	
+);
+
+SELECT * FROM "BOARD_IMG";
+
+
+
+
 -- SEQ_IMG_NO 시퀀스의 다음 값을 반환하는 함수 생성
 
 -- 전체 드래그 ALT+X
@@ -664,7 +690,9 @@ BEGIN
 END;
 -- 여기까지 긁기
 
+COMMIT; 
 
+SELECT NEXT_IMG_NO() FROM DUAL;
 
 
 

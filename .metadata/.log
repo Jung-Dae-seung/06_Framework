@@ -6610,3 +6610,793 @@ java.lang.InterruptedException
 
 !ENTRY org.eclipse.lsp4e 4 0 2024-11-15 16:36:44.039
 !MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/common/config/DBConfig.java
+!SESSION 2024-11-18 08:56:20.067 -----------------------------------------------
+eclipse.buildId=4.33.0.202410162246
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-18 08:56:40.249
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-18 08:58:03.651
+!MESSAGE Logback config file: C:\workspace\06_Framework\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-11-18 08:58:03.986
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-11-18 08:58:03.986
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-11-18 08:58:04.188
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-11-18 08:58:04.188
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-18 08:58:07.515
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\tools\sts-4.26.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/workspace/06_Framework/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1731887887514
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\tools\sts-4.26.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.58.0.202410160331\servers\spring-boot-language-server\spring-boot-language-server-1.58.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-18 08:58:07.515
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-18 08:58:07.538
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 11724
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-18 08:58:08.817
+!MESSAGE Boot project ADDED: boardProject-boot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-18 08:58:08.818
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-18 08:58:08.819
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-18 08:58:08.822
+!MESSAGE Boot project ADDED: demoProject1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-18 08:58:08.824
+!MESSAGE Boot project ADDED: demoProject2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-18 08:58:08.825
+!MESSAGE Boot project ADDED: todoList
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-11-18 08:58:08.872
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user1'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 08:58:40.536
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 08:58:40.635
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\tools\sts-4.26.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 08:58:40.650
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 08:58:40.653
+!MESSAGE [Info]	No ES Library found for file: file:///C:/workspace/06_Framework/todoList/src/main/resources/static/js/ajax-main.js
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 09:04:26.573
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/todoList/src/main/java/edu/kh/todo/controller/AjaxController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 09:07:56.764
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/todoList/src/main/java/edu/kh/todo/controller/AjaxController.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 09:12:40.321
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\tools\sts-4.26.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 09:12:40.323
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 09:12:41.267
+!MESSAGE [Info]	No ES Library found for file: file:///C:/workspace/06_Framework/boardProject-boot/src/main/resources/static/js/main.js
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 09:14:54.509
+!MESSAGE Marker id 5400 not found.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/boardProject-boot/src/main/resources/static/js/main.js)[376]: java.lang.IllegalStateException
+	at org.eclipse.core.internal.resources.Marker.checkInfo(Marker.java:63)
+	at org.eclipse.core.internal.resources.Marker.getAttribute(Marker.java:108)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.getResolutions(LSPCodeActionMarkerResolution.java:106)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.ui.internal.genericeditor.markers.MarkerInformationControl.setInput(MarkerInformationControl.java:107)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4099)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3715)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+!SUBENTRY 1 org.eclipse.core.resources 4 376 2024-11-18 09:14:54.511
+!MESSAGE Marker id 5400 not found.
+!STACK 0
+java.lang.IllegalStateException
+	at org.eclipse.core.internal.resources.Marker.checkInfo(Marker.java:63)
+	at org.eclipse.core.internal.resources.Marker.getAttribute(Marker.java:108)
+	at org.eclipse.lsp4e.operations.codeactions.LSPCodeActionMarkerResolution.getResolutions(LSPCodeActionMarkerResolution.java:106)
+	at org.eclipse.ui.internal.ide.registry.MarkerHelpRegistry.getResolutions(MarkerHelpRegistry.java:393)
+	at org.eclipse.ui.internal.genericeditor.markers.MarkerInformationControl.setInput(MarkerInformationControl.java:107)
+	at org.eclipse.jface.text.AbstractInformationControlManager.internalShowInformationControl(AbstractInformationControlManager.java:1151)
+	at org.eclipse.jface.text.AbstractInformationControlManager.presentInformation(AbstractInformationControlManager.java:1120)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager.presentInformation(AbstractHoverInformationControlManager.java:884)
+	at org.eclipse.jface.text.TextViewerHoverManager.doPresentInformation(TextViewerHoverManager.java:237)
+	at org.eclipse.jface.text.TextViewerHoverManager.lambda$3(TextViewerHoverManager.java:227)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4099)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3715)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 09:18:06.302
+!MESSAGE [Info]	No ES Library found for file: file:///C:/workspace/06_Framework/todoList/src/main/resources/static/js/ajax-main.js
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 09:22:00.619
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/todoList/src/main/java/edu/kh/todo/controller/MainController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 09:22:08.556
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/main/controller/MainController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 09:22:12.429
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/myPage/controller/MyPageController.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 09:26:22.672
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\tools\sts-4.26.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 09:26:22.674
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 09:26:22.676
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/todoList/src/main/java/edu/kh/todo/controller/MainController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 09:36:32.584
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 09:36:32.598
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 09:36:32.604
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 09:36:32.610
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 09:36:33.055
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 10:18:39.278
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/member/controller/MemberController.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 10:33:36.935
+!MESSAGE [Info]	No ES Library found for file: file:///C:/workspace/06_Framework/boardProject-boot/src/main/resources/static/js/board/boardUpdate.js
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 11:28:54.348
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 11:28:54.457
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\tools\sts-4.26.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 11:28:54.460
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 11:28:55.295
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 11:28:55.321
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 11:28:55.326
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 11:28:55.332
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 11:28:59.946
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 11:29:06.297
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 11:29:06.302
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-11-18 14:16:26.373
+!MESSAGE Could not detect hyperlinks due to timeout after 800 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.declaration.OpenDeclarationHyperlinkDetector.detectHyperlinks(OpenDeclarationHyperlinkDetector.java:72)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:229)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-11-18 14:18:52.774
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 14:19:13.043
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 14:19:13.221
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\tools\sts-4.26.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 14:19:13.224
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:19:13.925
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:19:13.933
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:19:13.947
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:19:13.953
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:19:13.958
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 14:21:38.536
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 14:21:38.642
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\tools\sts-4.26.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 14:21:38.646
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:21:39.365
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:42:07.810
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:42:48.889
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:42:52.849
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:44:31.882
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:44:31.892
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:44:36.719
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:44:36.723
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:44:55.037
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:44:57.912
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:44:59.724
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:45:01.428
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:45:29.944
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:46:13.089
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:46:18.726
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:46:19.952
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:46:40.261
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:46:40.266
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:46:46.338
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:46:46.343
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:46:50.733
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:46:53.749
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:46:53.753
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:46:56.617
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:46:56.624
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:46:59.167
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:46:59.172
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:47:00.436
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:47:00.440
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:47:18.040
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:47:18.045
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:47:23.972
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/myPage/controller/MyPageController.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 14:47:42.263
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 14:47:42.360
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\tools\sts-4.26.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 14:47:42.362
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:47:43.014
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:47:43.018
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:47:43.021
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:47:48.409
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:47:48.415
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:47:48.418
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:47:53.669
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:47:53.673
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:47:53.677
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:48:18.213
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:48:18.217
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:48:19.339
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:48:19.343
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:48:26.202
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:48:26.206
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:48:34.126
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:48:34.132
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:49:09.464
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:49:09.468
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:49:09.475
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:49:13.391
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:49:13.399
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:49:16.299
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:49:16.303
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:49:18.082
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:49:18.085
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:49:19.581
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:49:19.585
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:49:21.225
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 14:49:21.230
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 15:02:00.973
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 15:02:00.979
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 15:02:00.985
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 15:06:09.840
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 15:06:09.845
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 15:10:24.748
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 15:10:31.590
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 15:10:31.595
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 15:10:31.599
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 15:14:11.115
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 15:14:11.120
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-11-18 15:14:11.659
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-11-18 15:14:12.897
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 16:46:21.287
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 16:46:21.391
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\tools\sts-4.26.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 16:46:21.394
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 16:46:22.089
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 16:48:30.007
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 17:24:58.775
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 17:24:59.563
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 17:25:01.563
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 17:25:03.021
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/EditBoardController.java
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 18:21:50.014
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 18:21:50.111
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "C:\tools\sts-4.26.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-18 18:21:50.114
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 18:21:50.764
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 18:21:50.780
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 18:21:50.785
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 18:21:50.790
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/board/controller/BoardController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-18 18:21:55.116
+!MESSAGE [Error]	Unexpected resource file:///C:/workspace/06_Framework/boardProject-boot/src/main/java/edu/kh/project/member/controller/MemberController.java
+!SESSION 2024-11-18 18:35:32.613 -----------------------------------------------
+eclipse.buildId=4.33.0.202410162246
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-18 18:35:34.107
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-18 18:35:47.404
+!MESSAGE Logback config file: C:\workspace\06_Framework\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-11-18 18:35:47.611
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-11-18 18:35:47.611
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-11-18 18:35:47.791
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-11-18 18:35:47.791
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-18 18:35:50.405
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\tools\sts-4.26.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/workspace/06_Framework/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1731922550405
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\tools\sts-4.26.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.58.0.202410160331\servers\spring-boot-language-server\spring-boot-language-server-1.58.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-18 18:35:50.405
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-18 18:35:50.414
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 13052
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-18 18:35:51.433
+!MESSAGE Boot project ADDED: boardProject-boot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-18 18:35:51.434
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-18 18:35:51.436
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-18 18:35:51.440
+!MESSAGE Boot project ADDED: demoProject1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-18 18:35:51.442
+!MESSAGE Boot project ADDED: demoProject2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-18 18:35:51.444
+!MESSAGE Boot project ADDED: todoList
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-11-18 18:35:51.480
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user1'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-11-19 08:51:51.889 -----------------------------------------------
+eclipse.buildId=4.33.0.202410162246
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-19 08:52:14.211
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-19 09:00:06.564
+!MESSAGE Logback config file: C:\workspace\06_Framework\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-11-19 09:00:06.892
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-11-19 09:00:06.892
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-11-19 09:00:07.068
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-11-19 09:00:07.068
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-19 09:00:10.259
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\tools\sts-4.26.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Dspring.config.location=classpath:/application.properties
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/workspace/06_Framework/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1731974410258
+-Dlanguageserver.hover-timeout=225
+-jar
+C:\tools\sts-4.26.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.58.0.202410160331\servers\spring-boot-language-server\spring-boot-language-server-1.58.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-19 09:00:10.259
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-19 09:00:10.281
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 12624
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-19 09:00:11.469
+!MESSAGE Boot project ADDED: boardProject-boot
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-19 09:00:11.470
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-19 09:00:11.471
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-19 09:00:11.473
+!MESSAGE Boot project ADDED: demoProject1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-19 09:00:11.475
+!MESSAGE Boot project ADDED: demoProject2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-19 09:00:11.475
+!MESSAGE Boot project ADDED: todoList
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-11-19 09:00:11.533
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user1'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-11-19 09:14:02.956
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-11-19 11:14:54.899
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)

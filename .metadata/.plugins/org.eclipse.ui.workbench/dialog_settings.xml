@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="WorkbenchPreferenceDialog.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="257"/>
+		<item key="DIALOG_X_ORIGIN" value="106"/>
 		<item key="DIALOG_Y_ORIGIN" value="153"/>
-		<item key="DIALOG_WIDTH" value="804"/>
-		<item key="DIALOG_HEIGHT" value="718"/>
+		<item key="DIALOG_WIDTH" value="1004"/>
+		<item key="DIALOG_HEIGHT" value="726"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 	<section name="NewWizardAction">
@@ -23,5 +23,19 @@
 	<section name="EditorSelectionDialog">
 		<item key="EditorSelectionDialog.STORE_ID_INTERNAL_EXTERNAL" value="true"/>
 		<item key="EditorSelectionDialog.STORE_ID_DESCR" value="Gradle 원본 파일"/>
+	</section>
+	<section name="org.eclipse.ui.internal.dialogs.WorkbenchEditorsDialog">
+		<item key="allPersp" value="false"/>
+		<item key="sort" value="0"/>
+		<list key="bounds">
+			<item value="957"/>
+			<item value="155"/>
+			<item value="798"/>
+			<item value="553"/>
+		</list>
+		<list key="columns">
+			<item value="252"/>
+			<item value="506"/>
+		</list>
 	</section>
 </section>
