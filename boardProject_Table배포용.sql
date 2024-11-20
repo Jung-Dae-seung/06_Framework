@@ -653,9 +653,17 @@ SELECT * FROM "BOARD_IMG";
 
 /* 좋아요 테이블(BOARD_LIKE) 샘플 데이터 추가 */
 INSERT INTO "BOARD_LIKE"
-VALUES(1, 1998); -- 1번 회원이 1998번 글에 좋아요를 클릭함
+VALUES(2, 2002); -- 1번 회원이 1998번 글에 좋아요를 클릭함
 
 COMMIT;
+
+
+-- 좋아요 여부 확인
+SELECT COUNT(*) FROM "BOARD_LIKE"
+WHERE MEMBER_NO = 2
+AND BOARD_NO = 2002;
+
+SELECT * FROM "BOARD_LIKE";
 
 ----------------------------------------------------------
 
