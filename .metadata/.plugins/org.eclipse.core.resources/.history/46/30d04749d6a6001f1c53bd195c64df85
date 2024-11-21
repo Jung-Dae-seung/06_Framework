@@ -1,0 +1,18 @@
+package edu.kh.project.board.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import edu.kh.project.board.model.service.CommentService;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@Controller
+@RequestMapping("comment")
+@RequiredArgsConstructor
+@Slf4j
+public class CommentController {
+
+	private final CommentService service;
+	
+}

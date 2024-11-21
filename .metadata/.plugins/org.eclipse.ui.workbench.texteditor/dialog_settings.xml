@@ -3,6 +3,9 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
 	<list key="searchhistory">
+		<item value="cp"/>
+		<item value="main-style"/>
+		<item value="css"/>
 		<item value="RequestBody"/>
 		<item value="@ResponseBody"/>
 		<item value="@RequiredArgsConstructor"/>
@@ -15,18 +18,16 @@
 		<item value="my.profile.resource-location"/>
 		<item value="탈퇴"/>
 		<item value="insertUploadFile"/>
-		<item value="rawPassword"/>
-		<item value="rawPassword "/>
-		<item value="memberService"/>
 	</list>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="thumbnail"/>
+		<item key="selection" value=""/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="delete"/>
 			<item value="thumbnail"/>
 			<item value="likecheck"/>
 			<item value="upload"/>

@@ -162,7 +162,7 @@ const selectCommentList = () => {
 
 
 
-//selectCommentList();
+selectCommentList();
 
 // -----------------------------------------------------------------------
 
