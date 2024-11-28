@@ -3,21 +3,21 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
 	<list key="searchhistory">
+		<item value="insert"/>
+		<item value="parentCommentNo"/>
+		<item value="board"/>
+		<item value="selectCommentList"/>
+		<item value="maxFileSize"/>
+		<item value="selectOne"/>
+		<item value="checkAuthKey"/>
+		<item value="fetch"/>
+		<item value="session"/>
+		<item value="selectBoardList"/>
 		<item value="cp"/>
 		<item value="main-style"/>
 		<item value="css"/>
 		<item value="RequestBody"/>
 		<item value="@ResponseBody"/>
-		<item value="@RequiredArgsConstructor"/>
-		<item value="selectTodoList"/>
-		<item value="select"/>
-		<item value="비동기"/>
-		<item value="memberList"/>
-		<item value="resetPw"/>
-		<item value="comment"/>
-		<item value="my.profile.resource-location"/>
-		<item value="탈퇴"/>
-		<item value="insertUploadFile"/>
 	</list>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item key="selection" value=""/>

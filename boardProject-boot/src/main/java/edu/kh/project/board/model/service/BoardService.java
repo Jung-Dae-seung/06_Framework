@@ -27,14 +27,26 @@ public interface BoardService {
 
 	/** 게시글 좋아요 체크/해제
 	 * @param map
-	 * @return
+	 * @return result
 	 */
 	int boardLike(Map<String, Integer> map);
 
 	/** 조회 수 1 증가
 	 * @param boardNo
-	 * @return
+	 * @return result
 	 */
 	int updateReadCount(int boardNo);
+
+	/** 검색 서비스
+	 * @param paramMap
+	 * @param cp
+	 * @return map
+	 */
+	Map<String, Object> searchList(Map<String, Object> paramMap, int cp);
+
+	/** DB 이미지 파일명 목록 조회
+	 * @return
+	 */
+	List<String> selectDbImageLisst();
 
 }

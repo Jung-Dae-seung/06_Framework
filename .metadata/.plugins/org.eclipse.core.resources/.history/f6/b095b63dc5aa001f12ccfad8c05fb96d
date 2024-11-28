@@ -1,0 +1,73 @@
+package edu.kh.project.common.scheduling;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+@Component
+@PropertySource("classpath:/config.properties")
+public class ImageDeleteScheduling {
+
+	// 회원 프로필 이미지 파일 저장 경로
+	@Value("${my.profile.folder-path}")
+	private String profileFolderPath;
+
+	// 게시판 이미지 파일 저장 경로
+	@Value("${my.board.folder-path}")
+	private String boardFolderPath;
+	
+	
+	// cron = "초 분 시 일 월 요일 [년도]" - 요일 : 1(SUN) ~ 7(SAT)
+	
+	// @Scheduled(cron = "0,30 * * * * *") // 시계 초 단위가 0, 30 인 경우 수행
+	// @Scheduled(cron = "0,15,30,45 * * * * *") // 시계 초 단위가 0, 15, 30, 45 인 경우 수행
+	// @Scheduled(cron = "0 0 * * * *") // 매 시간(정시)마다 수행
+	// @Scheduled(cron = "0 0 0 * * *") // 자정
+	// @Scheduled(cron = "0 0 12 * * *") // 정오
+	// @Scheduled(cron = "0 0 0 1 * *") // 매달 1일
+	
+	@Scheduled(cron = "0,30 * * * * *")
+	public void scheduling() {
+		log.info("스케줄러 동작!");
+		
+		// DB, 서버 파일 목록 비교 후
+		// DB에 없는 서버 이미지 파일 삭제 동작
+		
+	}
+	
+
+}
+
+/*
+ * @Scheduled
+ *
+ * * Spring에서 제공하는 스케줄러 - 스케줄러 : 시간에 따른 특정 작업(Job)의 순서를 지정하는 방법.
+ *
+ * 설정 방법 1) XXXAPPlication.java 파일에 @EnableScheduling 어노테이션 추가 2) 스케쥴링 동작을 위한
+ * 클래스 작성
+ *
+ *
+ * @Scheduled 속성 - fixedDelay : 이전 작업이 끝난 시점으로 부터 고정된 시간(ms)을 설정.
+ * 
+ * @Scheduled(fixedDelay = 10000) // 이전 작업이 끝난 후 10초 뒤에 실행
+ * 
+ * - fixedRate : 이전 작업이 수행되기 시작한 시점으로 부터 고정된 시간(ms)을 설정.
+ * 
+ * @Scheduled(fixedRate = 10000) // 이전 작업이 시작된 후 10초 뒤에 실행
+ * 
+ * 
+ * 
+ * * cron 속성 : UNIX계열 잡 스케쥴러 표현식으로 작성 - cron="초 분 시 일 월 요일 [년도]" - 요일 : 1(SUN) ~
+ * 7(SAT) ex) 2019년 9월 16일 월요일 10시 30분 20초 cron="20 30 10 16 9 2 " // 연도 생략 가능
+ *
+ * - 특수문자 * : 모든 수. - : 두 수 사이의 값. ex) 10-15 -> 10이상 15이하 , : 특정 값 지정. ex) 3,4,7
+ * -> 3,4,7 지정 / : 값의 증가. ex) 0/5 -> 0부터 시작하여 5마다 ? : 특별한 값이 없음. (월, 요일만 해당) L :
+ * 마지막. (월, 요일만 해당)
+ * 
+ * @Scheduled(cron="0 * * * * *") // 모든 0초 마다 -> 매 분마다 실행
+ *
+ */

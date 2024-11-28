@@ -7,6 +7,17 @@
 	<item key="CallHierarchyViewPart.ratio3" value="500"/>
 	<item key="CallHierarchyViewPart.orientation" value="3"/>
 	<item key="CallHierarchyViewPart.ratio1" value="500"/>
+	<item key="org.eclipse.jdt.ui.codeformatter.line_wrapping_tab_page.preview_line_width" value="40"/>
+	<item key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_width" value="1213"/>
+	<item key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_height" value="760"/>
+	<item key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_x" value="707"/>
+	<item key="org.eclipse.jdt.uiformatter_pagemodify_dialog.preferred_y" value="20"/>
+	<item key="org.eclipse.jdt.uiformatter_pagemodify_dialog.sash_form_left_width" value="526"/>
+	<item key="org.eclipse.jdt.uiformatter_pagemodify_dialog.sash_form_rigth_width" value="646"/>
+	<item key="org.eclipse.jdt.uiformatter_page.preference_tree_expansion" value="00.0..0.0.000.0.0.0.0.0.0.0.0.0.0..00.0.0.0.0.0.0.0.0.0.0..00.0.0.0.0.0.0..00.0.0.0..00.0.0.0...00.0.0..000.0..0.0..000.0.0.0.0.0.0.0.0.0.0.0...00.0..0.."/>
+	<item key="org.eclipse.jdt.uiformatter_page.preference_scroll_position" value="0"/>
+	<item key="ProjectSelectionDialog.show_all" value="true"/>
+	<item key="org.eclipse.jdt.uiformatter_page.last_focus_index" value="42"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item key="group_libraries" value="true"/>
 		<item key="layout" value="1"/>
@@ -23,8 +34,8 @@
 	<section name="JavaElementSearchActions">
 	</section>
 	<section name="NewClassCreationWizard.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="310"/>
-		<item key="DIALOG_Y_ORIGIN" value="222"/>
+		<item key="DIALOG_X_ORIGIN" value="290"/>
+		<item key="DIALOG_Y_ORIGIN" value="282"/>
 		<item key="DIALOG_WIDTH" value="575"/>
 		<item key="DIALOG_HEIGHT" value="659"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
